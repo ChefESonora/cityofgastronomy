@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City of Gastronomy Productions</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+
+body {
+  margin: 0;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  margin: 10px;
+  background: #c0392b;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #e74c3c;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.featured-video iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+footer {
+  background: #000;
+  padding: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .featured-video iframe {
+    height: 300px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>City of Gastronomy Productions</h1>
+    <p>4,000 Years of Food Culture. One Storytelling Platform.</p>
+    <a href="#watch" class="button">Watch</a>
+    <a href="#listen" class="button">Listen</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>Rooted in Tucson</h2>
+  <p>
+    From ancient desert agriculture to today's celebrated chefs,
+    we document the culinary heritage of Tucson through cinematic storytelling,
+    radio broadcasts, podcasts, and documentary film.
+  </p>
+</section>
+
+<section id="watch" class="section featured-video">
+  <h2>Featured Episode</h2>
+  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+  title="YouTube video player"
+  frameborder="0"
+  allowfullscreen></iframe>
+</section>
+
+<section id="listen" class="section">
+  <h2>Listen & Subscribe</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Radio Broadcast</h3>
+      <p>Weekly storytelling from Tucson's culinary voices.</p>
+      <a href="#" class="button">Tune In</a>
+    </div>
+    <div class="card">
+      <h3>Podcast Series</h3>
+      <p>Deep dives into heritage crops, chefs, and food historians.</p>
+      <a href="#" class="button">Listen</a>
+    </div>
+    <div class="card">
+      <h3>YouTube Channel</h3>
+      <p>Short films and features highlighting our food culture.</p>
+      <a href="#" class="button">Watch</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Collaborate With Us</h2>
+  <p>Are you a grower, chef, historian, or food innovator?</p>
+  <a href="mailto:info@cityofgastronomy.net" class="button">Contact</a>
+</section>
+
+<footer>
+  © 2026 City of Gastronomy Productions | Tucson, Arizona
+</footer>
+
+</body>
+</html>
